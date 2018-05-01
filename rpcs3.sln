@@ -3,10 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asmjit", "asmjitsrc\asmjit.vcxproj", "{AC40FF01-426E-4838-A317-66354CEFAE88}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8BC303AB-25BE-4276-8E57-73F171B2D672} = {8BC303AB-25BE-4276-8E57-73F171B2D672}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asmjit", "asmjit", "{E2A982F2-4B1A-48B1-8D77-A17A589C58D7}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "emucore", "rpcs3\emucore.vcxproj", "{C4A10229-4712-4BD2-B63E-50D93C67A038}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8BC303AB-25BE-4276-8E57-73F171B2D672} = {8BC303AB-25BE-4276-8E57-73F171B2D672}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "llvm_build", "llvm_build\llvm_build.vcxproj", "{8BC303AB-25BE-4276-8E57-73F171B2D672}"
 EndProject
@@ -104,9 +110,11 @@ Global
 		{C4A10229-4712-4BD2-B63E-50D93C67A038}.Release|x64.ActiveCfg = Release|x64
 		{C4A10229-4712-4BD2-B63E-50D93C67A038}.Release|x64.Build.0 = Release|x64
 		{8BC303AB-25BE-4276-8E57-73F171B2D672}.Debug - LLVM|x64.ActiveCfg = Debug|x64
+		{8BC303AB-25BE-4276-8E57-73F171B2D672}.Debug - LLVM|x64.Build.0 = Debug|x64
 		{8BC303AB-25BE-4276-8E57-73F171B2D672}.Debug - MemLeak|x64.ActiveCfg = Debug|x64
 		{8BC303AB-25BE-4276-8E57-73F171B2D672}.Debug|x64.ActiveCfg = Debug|x64
 		{8BC303AB-25BE-4276-8E57-73F171B2D672}.Release - LLVM|x64.ActiveCfg = Release|x64
+		{8BC303AB-25BE-4276-8E57-73F171B2D672}.Release - LLVM|x64.Build.0 = Release|x64
 		{8BC303AB-25BE-4276-8E57-73F171B2D672}.Release|x64.ActiveCfg = Release|x64
 		{FAC9B17B-F4B8-4B75-8AEB-C8C7CB92B078}.Debug - LLVM|x64.ActiveCfg = Debug - LLVM|x64
 		{FAC9B17B-F4B8-4B75-8AEB-C8C7CB92B078}.Debug - LLVM|x64.Build.0 = Debug - LLVM|x64
